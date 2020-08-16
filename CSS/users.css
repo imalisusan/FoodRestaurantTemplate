@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    overflow: hidden;
+}
+body
+{
+    background: #A8C1C8;
+    font-family:'Poppins', sans-serif;
+}
+/*Navigation Menu*/
+nav
+{
+    font-family:'Poppins', sans-serif;
+    width: 100%;
+    height: 50px;
+    background-color: #FFEEF1;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    position: sticky;
+    top: 0;
+    transition: .6s;
+}
+
+nav ul
+{
+    display: flex;
+    margin: 0;
+    padding: 0, 100px;
+    float: right;
+}
+nav ul li
+{
+    list-style: none;
+}
+nav ul li a
+{
+    display:block;
+    color: black;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+}
+nav ul li a.active
+{
+    background: rgb(247, 107, 135);
+}
+.title
+{
+    font-size: 20px;
+    margin-right: 300px;
+}
+
+/*Table*/
+filter
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .7;
+}
+table
+{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 6px 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(32, 32, 32, .3);
+    background: #fafafa;
+    text-align: center;
+}
+th,td
+{
+    padding: 12px 15px;
+    color: black;
+    font-family:'Poppins', sans-serif;
+}
+th
+{
+    background:rgb(247, 107, 135)
+}
+tr:nth-child(odd)
+{
+    background-color: #f0d5d9;
+}
+h2
+{
+    text-align: center;
+    
+}
+a
+{
+    text-decoration: none;
+    color: #551A8B;
+}
+.pagination
+{
+    display: inline-block;
+    margin-left: 32%;
+}
+.pagination a
+{
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid rgb(65, 65, 65);
+    color: black;
+}
+.pagination a.active
+{
+    background-color: #F76B87;
+    border: 1px solid #F76B87;
+    color: white;
+}
+.pagination a:hover:not(.active)
+{
+    background-color: #ddd;
+}
+.pagination a:first-child
+{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.pagination a:last-child
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

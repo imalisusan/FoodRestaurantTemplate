@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    overflow: hidden;
+}
+.spacer
+{
+    height: 30px;
+}
+/*Navigation Menu*/
+nav
+{
+    width: 100%;
+    height: 50px;
+    background-color: #d2f1fd;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    position: sticky;
+    top: 0;
+}
+nav ul
+{
+    display: flex;
+    margin: 0;
+    padding: 0, 100px;
+    float: right;
+}
+nav ul li
+{
+    list-style: none;
+}
+nav ul li a
+{
+    display:block;
+    color: black;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+}
+nav ul li a.active
+{
+    background: #EEC0C6;
+}
+.hero
+{
+    height: 100%;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    opacity: .8;
+}
+.form-box
+{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #d2f1fd;
+    padding: 20px;
+}
+.button-box
+{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border:0;
+    outline: none;
+    position: relative;
+}
+
+#btn
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #7EE8FA, #EEC0C6);
+    border-radius: 30px;
+    transition: 5s;
+}
+.input-group
+{
+    top:180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    padding-left: 40px;
+
+}
+.input-field
+{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background-color: transparent;
+    height: 25px;
+    font-size: 15px;
+}
+.submit-btn
+{
+    width: 70%;
+    padding:10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #7EE8FA, #EEC0C6);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    transition: .6s;
+}
+
+.chech-box
+{
+margin: 30px 10px 30px 0;
+}
+span
+{
+    color: #777;
+    font-size: 14px;
+    bottom: 68px;
+    position: absolute;
+}
+#link
+{
+    text-decoration: none;
+    
+}
